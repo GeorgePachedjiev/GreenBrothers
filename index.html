@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GREEN BROTHERS | Градинарски услуги, косене и поддръжка на дворове</title>
+
+  <meta name="description" content="GREEN BROTHERS предлага косене на дворове, подрязване на храсти, почистване на парцели и абонаментна поддръжка на градини в Пловдив, Смолян, София и Хасково." />
+  <meta name="keywords" content="градинарски услуги, косене на дворове, подрязване на храсти, почистване на парцели, поддръжка на градини, Пловдив, Смолян, София, Хасково" />
+  <meta name="author" content="GREEN BROTHERS" />
+
+  <meta property="og:title" content="GREEN BROTHERS - Градинарски услуги" />
+  <meta property="og:description" content="Косене, подрязване, почистване и поддръжка на дворове и градини." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GREEN BROTHERS",
+    "description": "Градинарски услуги, косене на дворове, подрязване на храсти и почистване на парцели.",
+    "areaServed": ["Пловдив", "Смолян", "София", "Хасково"],
+    "telephone": "0886749861",
+    "priceRange": "€€",
+    "url": "https://example.com"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="#home" class="brand">
+      <img src="img/logo.png" alt="GREEN BROTHERS лого" onerror="this.style.display='none'" />
+      <span>GREEN BROTHERS</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цени</a>
+      <a href="#areas">Райони</a>
+      <a href="#gallery">Галерия</a>
+      <a href="#contact">Контакт</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+    <p class="tag">Градинарски услуги в Пловдив, Смолян, София и Хасково</p>
+
+    <h1>Косене на дворове, подрязване на храсти и професионална поддръжка на градини</h1>
+
+    <p class="lead">
+      GREEN BROTHERS работи бързо, коректно и качествено.
+      Предлагаме безплатен оглед и индивидуална оферта.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn primary" href="#" onclick="showPhone()">Обади се сега</a>
+      <a class="btn secondary" href="#prices">Виж цени</a>
+    </div>
+  </div>
+
+  <div class="hero-card reveal">
+    <h2>Промоция за нови клиенти</h2>
+    <p>Безплатен оглед и до 20% отстъпка при първо посещение.</p>
+
+    <ul>
+      <li>Косене на тревни площи</li>
+      <li>Подрязване на жив плет</li>
+      <li>Почистване на обрасли дворове</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-title reveal">
+    <p>Какво предлагаме</p>
+    <h2>Нашите услуги</h2>
+  </div>
+
+  <div class="grid cards">
+    <article class="card reveal">
+      <h3>Косене на тревни площи</h3>
+      <p>Косене на малки и големи дворове, вили, парцели и зелени площи.</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>Подрязване на храсти</h3>
+      <p>Оформяне на храсти, жив плет и декоративна растителност.</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>Почистване на дворове</h3>
+      <p>Почистване на обрасли терени, клони, треви и зелени отпадъци.</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>Абонаментна поддръжка</h3>
+      <p>Редовна поддръжка за къщи, вили, фирмени терени и комплекси.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section green" id="prices">
+  <div class="section-title reveal">
+    <p>Ориентировъчен ценоразпис</p>
+    <h2>Цени</h2>
+  </div>
+
+  <div class="price-table reveal">
+    <div><span>Косене до 200 кв.м</span><strong>от 20 €</strong></div>
+    <div><span>Косене 200–500 кв.м</span><strong>от 30 €</strong></div>
+    <div><span>Косене на големи площи</span><strong>по договаряне</strong></div>
+    <div><span>Подрязване на храсти</span><strong>от 10 €</strong></div>
+    <div><span>Подрязване на жив плет</span><strong>от 4 €/л.м.</strong></div>
+    <div><span>Почистване на обрасли дворове</span><strong>от 50 €</strong></div>
+    <div><span>Извозване на отпадъци</span><strong>по договаряне</strong></div>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="section-title reveal">
+    <p>Къде работим</p>
+    <h2>Обслужвани области</h2>
+  </div>
+
+  <div class="grid">
+
+    <div class="card reveal">
+        <img src="img/Plovdiv.jpg" alt="Градинарски услуги в Пловдив">
+        <h3>Област Пловдив</h3>
+    </div>
+
+    <div class="card reveal">
+        <img src="img/Smolyan.jpg" alt="Градинарски услуги в Смолян">
+        <h3>Област Смолян</h3>
+    </div>
+
+    <div class="card reveal">
+        <img src="img/Sofia.jpg" alt="Градинарски услуги в София">
+        <h3>Област София</h3>
+    </div>
+
+    <div class="card reveal">
+        <img src="img/Haskovo.jpg" alt="Градинарски услуги в Хасково">
+        <h3>Област Хасково</h3>
+    </div>
+
+</div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="section-title reveal">
+    <p>Преди и след</p>
+    <h2>Галерия</h2>
+  </div>
+
+  <div class="gallery">
+
+    <div class="photo reveal">
+        <img src="img/MowedYard.jpg" alt="Косене на двор">
+    </div>
+
+    <div class="photo reveal">
+        <img src="img/TrimmedHedge.jpg" alt="Подрязан жив плет">
+    </div>
+
+    <div class="photo reveal">
+        <img src="img/ClearedPlot.jpg" alt="Почистен парцел">
+    </div>
+
+</div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="section-title reveal">
+    <p>Въпроси</p>
+    <h2>Често задавани въпроси</h2>
+  </div>
+
+  <div class="faq-item reveal">
+    <button>Правите ли безплатен оглед?</button>
+    <p>Да, предлагаме безплатен оглед и индивидуална оферта според площта и състоянието на двора.</p>
+  </div>
+
+  <div class="faq-item reveal">
+    <button>Работите ли с абонамент?</button>
+    <p>Да, предлагаме месечна абонаментна поддръжка за частни имоти, вили и фирмени площи.</p>
+  </div>
+
+  <div class="faq-item reveal">
+    <button>В кои райони работите?</button>
+    <p>Обслужваме областите Пловдив, Смолян, София и Хасково.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-box reveal">
+    <h2>Заяви оглед</h2>
+    <p>Свържи се с нас за косене, подрязване или почистване на двор.</p>
+
+    <a class="btn primary" href="#" onclick="showPhone()">Покажи телефон</a>
+
+    <p class="small">Viber и WhatsApp</p>
+  </div>
+
+  <form class="contact-form reveal" onsubmit="sendMessage(event)">
+    <input type="text" id="name" placeholder="Вашето име" required />
+    <input type="tel" id="phone" placeholder="Телефон" required />
+    <textarea id="message" placeholder="Каква услуга ви трябва?" required></textarea>
+
+    <button class="btn primary" type="submit">Изпрати запитване</button>
+  </form>
+</section>
+
+</main>
+
+<a class="floating-call" href="#" onclick="showPhone()">Обади се</a>
+
+<footer>
+  <p>GREEN BROTHERS – Косим • Подрязваме • Поддържаме</p>
+  <p>© 2026 GREEN BROTHERS. Всички права запазени.</p>
+</footer>
+
+</body>
+</html>
